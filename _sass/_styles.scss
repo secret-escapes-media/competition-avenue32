@@ -27,8 +27,11 @@
   display:inline-block;
   padding: .5em 1.5em;
   border: 1px solid $se-orange;
-  font-weight: 500;
-  border-radius: 10em;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
   &:hover {
     color: white;
     background-color: $se-orange;
@@ -71,7 +74,7 @@
     padding: 1.5em 2.2em;
   }
   & + & {
-    border-left: 1px solid $white-5;
+    border-left: 1px solid $white-25;
   }
 }
 
@@ -86,20 +89,19 @@
   .flexbox & {
     display: flex;
     justify-content: flex-start;
-    height: 75%;
+    height: 70%;
     padding-top: 0;
   }
 }
 
 .page {
-  padding: $margin;
+  padding: $margin 0;
   background-color: $white;
   box-shadow: 0px 0px 42.4px 10.6px rgba(0, 0, 0, 0.1);
   @include bp(large){
-    padding: ($margin*1.2);
+    padding: ($margin*1.2) 0;
   }
   @include bp(xxlarge){
-    padding: ($margin*1.8);
     margin-bottom: ($margin*2);
   }
   @include bp(xxxlarge){
@@ -137,14 +139,37 @@
   display: inline-block;
   &--secret-escapes{
     margin-top: 4px;
+    > img {
+      max-width: 80px;
+      @include bp(medium){ max-width: 120px; }
+      @include bp(xxxlarge){ max-width: 140px; }
+    }
   }
-   > img {
-    max-width: 80px;
-    @include bp(medium){
-      max-width: 120px;
+  &--partner{
+    > img {
+      max-width: 55px;
+      @include bp(medium){ max-width: 90px; }
+      @include bp(xxxlarge){ max-width: 100px; }
     }
-    @include bp(xxxlarge){
-      max-width: 140px;
-    }
+  }
+}
+
+
+// ---------- prize number ----------
+
+.prize {
+  &__number {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: $black-85;
+    color: #ffffff;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-family: 'Cormorant Garamond';
+    font-size: 3.4em;
+    line-height: 1;
   }
 }

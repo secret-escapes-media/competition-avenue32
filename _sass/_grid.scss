@@ -45,6 +45,10 @@ section {
     margin-left: $margin;
     margin-right: $margin;
   }
+  &-top { margin-top: $margin; }
+  &-bottom { margin-bottom: $margin; }
+  &-top-none { margin-top: 0 !important; }
+  &-bottom-none { margin-bottom: 0 !important; }
 }
 
 .row__column + .row__column {

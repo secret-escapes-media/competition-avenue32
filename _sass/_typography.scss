@@ -5,7 +5,7 @@
 
 $core-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 $main-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-$title-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+$title-font-family: 'Cormorant Garamond',Garamond,'Times New Roman',serif;
 
 html { font-size:62.5%; }
 body,
@@ -70,8 +70,9 @@ input, textarea, keygen, select, button {
 
 .paragraph {
   &--lead {
-    font-size: 1.25em;
-    line-height: 1.25;
+    font-size: 1.2em;
+    line-height: 1.55;
+    font-weight: 200;
   }
   &--large { font-size: 1.05em; }
   @include bp(large){
