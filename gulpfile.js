@@ -19,7 +19,7 @@ gulp.task('serve', function () {
       server: {
         baseDir: '_site/',
         routes: {
-          '/eleven-sports': '_site/'
+          '/avenue32': '_site/'
         }
       }
     });

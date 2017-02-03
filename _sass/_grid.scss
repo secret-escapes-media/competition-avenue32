@@ -37,6 +37,14 @@ section {
     padding-left: $margin;
     padding-right: $margin;
   }
+  &-vertical {
+    padding-top: ( $margin );
+    padding-bottom: ( $margin );
+    @include bp(medium) {
+      padding-top: $margin*1.5;
+      padding-bottom: $margin*1.5;
+    }
+  }
 }
 .row--margin {
   margin-left: ( $margin / 2 );
@@ -49,6 +57,7 @@ section {
   &-bottom { margin-bottom: $margin; }
   &-top-none { margin-top: 0 !important; }
   &-bottom-none { margin-bottom: 0 !important; }
+  &-none { margin: 0 !important; }
 }
 
 .row__column + .row__column {

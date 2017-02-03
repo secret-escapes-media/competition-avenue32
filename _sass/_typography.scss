@@ -23,7 +23,6 @@ input, textarea, keygen, select, button {
 
 .title {
   font-family: $title-font-family;
-  letter-spacing: .025em;
   line-height: 1.15;
   + * { margin-top: .5em; }
 
@@ -70,13 +69,13 @@ input, textarea, keygen, select, button {
 
 .paragraph {
   &--lead {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.55;
     font-weight: 200;
   }
   &--large { font-size: 1.05em; }
   @include bp(large){
-    &--lead { font-size: 1.467em; }
+    &--lead { font-size: 1.267em; }
     &--large { font-size: 1.2em; }
   }
 }
@@ -84,6 +83,11 @@ input, textarea, keygen, select, button {
 
 // -------- general content styles --------
 
+p             {
+  max-width: 720px;
+  &.align-center,
+  .align-center & { margin-left: auto; margin-right: auto; }
+}
 p + *         { margin-top: 1em; }
 li            { list-style-position: inside; }
 ul li         { list-style-type: disc; }

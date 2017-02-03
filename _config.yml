@@ -1,8 +1,8 @@
 # Site settings
-title: eleven-sports
+title: Avenue 32
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
-baseurl: "/eleven-sports" # the subpath of your site, e.g. /blog/
+  Secret Escapes have partnered with Avenue 32 to bring you a competition destined for catwalk flaunts and stylish jaunts.
+baseurl: "/avenue32" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
 # Build settings

@@ -45,5 +45,24 @@
   }
 
 
+///////////////////////////////////////
+//      Enter bar
+///////////////////////////////////////
+
+  function enterbar(){
+    var st = $(document).scrollTop();
+    var page = $('.page').offset();
+    var competition = $('#competition').offset();
+
+    if( (st > page.top) && (st < competition.top) ){
+      $('.enter-bar').addClass('active');
+    }else{
+      $('.enter-bar').removeClass('active');
+    }
+  }
+  $(document).ready(function(){ enterbar(); });
+  $(document).scroll(function(){ enterbar(); });
+
+
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end
