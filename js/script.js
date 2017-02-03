@@ -51,10 +51,10 @@
 
   function enterbar(){
     var st = $(document).scrollTop();
-    var page = $('.page').offset();
-    var competition = $('#competition').offset();
+    var page = $('.page').offset().top;
+    var competition = ($('#competition').offset().top)-5;
 
-    if( (st > page.top) && (st < competition.top) ){
+    if( (st > page) && (st < competition) ){
       $('.enter-bar').addClass('active');
     }else{
       $('.enter-bar').removeClass('active');

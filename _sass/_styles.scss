@@ -79,7 +79,7 @@
 
 .intro {
   height: 600px;
-  padding-top: 100px;
+  padding-top: 50px;
   color: $white;
   text-align: center;
   align-items: center;
@@ -120,29 +120,33 @@
 // ---------- enter-bar ----------
 
 .enter-bar {
-  @include transition();
-  position: fixed;
-  bottom: -100px;
-  width: 100%;
-  padding: 20px 0;
-  background-color: $black-85;
-  &.active {
-    bottom: 0;
+  display: none;
+  @include bp(large){
+    @include transition();
+    position: fixed;
+    bottom: -100px;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $black-85;
+    &.active {
+      bottom: 0;
+    }
   }
 }
 
 
 // ---------- minium height for header ----------
 
-@media (max-height:550px) {
+@media (max-height:650px) {
   .intro,
   .flexbox .intro {
-    height: 450px;
+    height: 550px;
     padding-top: 25px;
   }
   .background,
   .flexbox .background {
-    height: 500px;
+    height: 650px;
   }
 }
 
